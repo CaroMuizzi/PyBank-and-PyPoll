@@ -29,10 +29,6 @@ with open(csvpath,newline="", encoding="utf-8") as budget_data:
     header = next(csvreader) 
 
     # Iterate through rows to fill our empty created Lists above. 
-    # sorry for the spanish: 
-    # por default csvreader va a leer nuestra data por rows, es decir, nos arrojaria por iteracion fecha - profit_losses
-    # con este loop creamos una lista de todas las fechas y una lista de todos los profis_losses.
-    # de esta forma es mas facil de manejar la data.
 
     for row in csvreader: 
 
@@ -40,7 +36,6 @@ with open(csvpath,newline="", encoding="utf-8") as budget_data:
         total_profit_losses.append(int(row[1]))
 
     # Iterate through the profit_losses list created  to get the monthly change 
-    # (use -1 because we sill calculate inside the loop the total_profit_losses[i+1] )
 
     for i in range(len(total_profit_losses)-1):
         
