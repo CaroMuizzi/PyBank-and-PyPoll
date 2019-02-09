@@ -74,7 +74,7 @@ with open(csvpath, newline='', encoding="utf8") as election_data:
    max_increase_value_index = Count_votes_per_candidate.index(max_increase_value)
    winner = Candidates_list[max_increase_value_index]
 
-# Print the Summary in an external text file called "PyPoll_Summary.txt" 
+# Print the Summary 
 print(" ")
 print("Election Results")
 print("-----------------------")
@@ -86,7 +86,7 @@ for key, value in summary_total_candidates.items():
 print("-----------------------")
 print(f"Winner: {winner}")
 
-# Print the Summary in the interactive shell
+# Print the Summary using sys
 print(" ",file = sys.stderr)
 print("Election Results",file = sys.stderr)
 print("-----------------------",file = sys.stderr)
