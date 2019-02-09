@@ -10,7 +10,7 @@ import csv
 # * The greatest increase in profits (date and amount) over the entire period
 # * The greatest decrease in losses (date and amount) over the entire period
 
-#Create the Path
+# Create the Path
 csvpath = os.path.join("Resources", "budget_data.csv")
 
 # Create the lists to store our values
@@ -58,3 +58,5 @@ print(f"Total: $ {sum(total_profit_losses)}")
 print(f"Average Change: {round(sum(change_profit_losses)/len(change_profit_losses),2)}")
 print(f"Greatest Increase in Profits: {total_months[max_increase_month]} $ {(str(max_increase_value))}")
 print(f"Greatest Decrease in Profits: {total_months[max_decrease_month]} $ {(str(max_decrease_value))}")
+
+# Carolina Muizzi
